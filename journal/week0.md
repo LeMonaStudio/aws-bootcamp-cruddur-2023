@@ -24,7 +24,9 @@ Logical Diagram: [View on Lucid](https://lucid.app/lucidchart/9f493397-c7dd-4bb1
 
 ### AWS Billing
 From the Billing dashboard, on the billing preference page, I selected options to receive PDF version of my AWS invoice and also to receive 
-free tier usage alerts and billing alerts via my email address. Also took a general overview of the billing dashaboard to know how to check cost incurred break down by service and all other billing related options on the dashboard. I also explored cost management on AWS using AWS Cost Explorer, which is a helpful service to get cost and usage reports of resources on your AWS account and alos good for auditing.
+free tier usage alerts and billing alerts via my email address. Also took a general overview of the billing dashaboard to know how to check 
+cost incurred break down by service and all other billing related options on the dashboard. I also explored cost management on AWS using 
+AWS Cost Explorer, which is a helpful service to get cost and usage reports of resources on your AWS account and alos good for auditing.
 
 Billing Preference Page
 
@@ -35,9 +37,18 @@ AWS Cost Explore Page
 ![](assets/aws-cost-explorer.png)
 
 
-
 ### AWS Budgets
-I created a new budget to track my credits spend. There was already a budget created in my AWS account to track monthly spend and was set
-to $10. This was created during a AWS course I attended for my AWS Developer Associate certification.
+I created a new budget to track my credits spend. There was already a budget created in my AWS account to track monthly spend and it was set
+to $10. This was created during a AWS course I attended for my AWS Developer Associate certification. The new budget was set to $1 and I added 
+an email address where to be notified if this threshold is exceeded. AWS will automatically notify me when:
 
-The credits tracking budget was set to $1 even though I had no credits but to implement what I learnt and to complete the task given. An alarm was set for me to be notified via email when the forecasted spend is 100% of the budget.
+- My spending reaches 85% of my threshold
+- My spending reaches 100% of my threshold
+- When my forecasted spending reaches 100% of my threshold
+
+![](assets/aws-budget-1.png)
+
+![](assets/aws-budget-2.png)
+
+
+

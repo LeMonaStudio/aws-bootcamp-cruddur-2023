@@ -37,7 +37,7 @@ AWS Cost Explore Page
 ![](assets/aws-cost-explorer.png)
 
 
-### AWS Budgets
+### Create a Budget
 I created a new budget to track my credits spend. There was already a budget created in my AWS account to track monthly spend and it was set
 to $10. This was created during a AWS course I attended for my AWS Developer Associate certification. The new budget was set to $1 and I added 
 an email address where to be notified if this threshold is exceeded. AWS will automatically notify me when:

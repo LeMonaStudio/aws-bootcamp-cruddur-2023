@@ -72,3 +72,25 @@ I generated access keys and downloaded the .csv file on my computer and securely
 
 ![](assets/access-keys-created-2.png)
 
+
+### Use CloudShell
+I launched AWS CloudShell from the console in the us-east-1 region. AWS CloudShell is a preconfigured command line interface to securely access your resources on AWS and it is recommended over third-party CLIs. 
+
+I configured the CloudShell auto prompt feature which is not enabled by the default by running the code below in the provided environment
+
+```
+aws --cli-auto-prompt
+```
+Using the AWS STS CLI commands below I was able to get information about the current user.
+
+```
+aws sts get-caller-identity
+```
+
+Also I run the command below to show contact information of the user.
+
+```
+aws account get-contact-information
+```
+
+![](assets/aws-cloudshell.png)

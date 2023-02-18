@@ -94,3 +94,47 @@ aws account get-contact-information
 ```
 
 ![](assets/aws-cloudshell.png)
+
+
+### Install AWS CLI
+After launching this repo on Gitpod, I installed AWS CLI using the code below. Note: These steps can be found on the [AWS CLI website](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+
+```
+$ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+$ unzip awscliv2.zip
+$ sudo ./aws/install
+```
+
+![](assets/aws-cli-gitpod.png)
+
+
+After installing the AWS CLI from the terminal, I configured Gitpod from the .gitpod.yml file with commmands that needs run when next the workspace is being spin up. What the code does is configure AWS CLI auto-prompt to partial mode, change the working directory to workspace and install AWS CLI.
+
+```yaml
+tasks:
+  - name: aws-cli
+    env:
+      AWS_CLI_AUTO_PROMPT: on-partial
+    init: |
+      cd /workspace
+      curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+      unzip awscliv2.zip
+      sudo ./aws/install
+      cd $THEIA_WORKSPACE_ROOT
+```
+
+![](assets/gitpod-configuration.png)
+
+
+I also set AWS credentials / access keys for my workspace by running the code below in the Gitpod terminal to set environment variable. These variables are immediately available to the code space any other time its spinned up.
+
+```
+$ gp env AWS_ACCESS_KEY_ID="MY_ACCESS_KEY_ID"
+gp env AWS_SECRET_ACCESS_KEY="MY_SECRET_ACCESS_KEY"
+gp env AWS_DEFAULT_REGION="us-east-1"
+```
+
+![](assets/gitpod-variables.png)
+
+
+

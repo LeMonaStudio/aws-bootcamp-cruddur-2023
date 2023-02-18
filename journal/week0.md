@@ -63,4 +63,12 @@ I created my AWS account months before this bootcamp so I have already carried o
 ![](assets/bootcamp-iam-mfa-set.png)
 
 
+### Generate AWS Credentials
+I generated access keys and downloaded the .csv file on my computer and securely saved. This access keys will give my user permission to access resources on my AWS account from the CLI (Command Line Interface).
+
+*Images from the task:*
+
+![](assets/access-keys-created-1.png)
+
+![](assets/access-keys-created-2.png)
 

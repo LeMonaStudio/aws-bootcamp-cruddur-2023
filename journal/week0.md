@@ -39,7 +39,12 @@ AWS Cost Explorer, which is a helpful service to get cost and usage reports of r
 
 ### Create a Budget
 I created a new budget to track my credits spend. There was already a budget created on my AWS account to track monthly spend and it was set
-to $10. This was created during a course I attended for my AWS Developer Associate certification. The new budget was specifically created to track my credits spend even though I do not currently have any credits on my AWS account and the threshold was set to $1. I also created an alert for notification, which will be triggered when 100% forecasted spending equals the threshoald of 1%.
+to $10. This was created during a course I attended for my AWS Developer Associate certification. The new budget was specifically created to 
+track my credits spend even though I do not currently have any credits on my AWS account and the threshold was set to $1. I also created an 
+alert for notification, which will be triggered when 100% forecasted spending equals the threshoald of 1%. As for the free tier, you can only 
+create maximum of 2 budegts, additional budgets will incur cost.
+
+*Images from the task:*
 
 ![](assets/aws-budget-1.png)
 

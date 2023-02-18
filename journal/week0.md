@@ -53,4 +53,14 @@ create maximum of 2 budegts, additional budgets will incur cost.
 ![](assets/aws-budget-3.png)
 
 
+### Add MFA to Root account
+I created my AWS account months before this bootcamp so I have already carried out the security recommendations required to secure my account. However, for this bootcamp I created a new IAM user and for which I have also set Multi-factor Authentication. MFA serves as another layer of security to protect our resources on AWS. The security recommendation from the attached screenshots have already been attended to and there are no affected policy but it wouldn't just disappear lol.
+
+*Images from the task:*
+
+![](assets/root-account-mfa-set.png)
+
+![](assets/bootcamp-iam-mfa-set.png)
+
+
 
